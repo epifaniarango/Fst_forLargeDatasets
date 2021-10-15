@@ -1,12 +1,12 @@
 # Fst for more than 100 populations
 
-The available softwares to calculate Fst do not allow more than 100 populations. Here there is a simple Rscript to overcome this problem:
+The available softwares to calculate Fst do not allow more than 100 populations. We used Weir and Cockerham Fst(1) with the software PLINK(2) is calculated with Here there is a simple Rscript to overcome this problem:
 
 
 ## Set up
 
 I use conda for installing almost all programs (https://conda.io/projects/conda/en/latest/user-guide/install/index.html). 
-Make sure that your conda environment has plink installed and is using R v.4. 
+Make sure that your conda environment has plink(1) installed and is using R v.4. 
 Also make sure that you have the Pacman library installed in R!
 
 ## Ready to run!
@@ -30,3 +30,6 @@ The running time will depend on the numbers of populations and the cores that yo
 Hope it works! Email me for any doubt (epifaniarango@gmail.com)
 
 
+# Bibliografy
+1. Chang, C. C. et al. Second-generation PLINK: rising to the challenge of larger and richer datasets. GigaScience 4, (2015).
+2.Weir, B. S. & Cockerham, C. C. Estimating F-Statistics for the Analysis of Population Structure. Evolution 38, 1358–1370 (1984).
