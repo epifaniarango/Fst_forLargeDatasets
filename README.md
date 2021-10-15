@@ -5,7 +5,7 @@ The available softwares to calculate Fst do not allow more than 100 populations.
 
 ## Set up
 
-I use conde for installing almost all programs (https://conda.io/projects/conda/en/latest/user-guide/install/index.html). 
+I use conda for installing almost all programs (https://conda.io/projects/conda/en/latest/user-guide/install/index.html). 
 Make sure that either your conda environment have plink installed and is using R v.4. 
 Also make sure that you have the Pacman library installed in R!
 
