@@ -27,7 +27,7 @@ Rscript Fst_script.R Dataset1 6
 ``` 
 
 The running time will depend on the numbers of populations and the cores that you have available. At the end you will get a final text file with the name Fst.txt with all the Fst combinations
-Hope it works! Email me for any doubt (epifaniarango@gmail.com)
+Hope it works! Email me for any doubt (epifaniarango@gmail.com).
 
 
 # Bibliografy
