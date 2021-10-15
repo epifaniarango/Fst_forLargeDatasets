@@ -42,7 +42,7 @@ expand.grid.unique <- function(x, y, include.equals=FALSE){
 
 
 combinaciones=as.data.frame(expand.grid.unique(pops,pops)) 
-combinaciones=combinaciones[1:80,]
+
 
 
 # normal for loop
