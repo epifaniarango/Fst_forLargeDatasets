@@ -32,4 +32,5 @@ Hope it works! Email me for any doubt (epifaniarango@gmail.com).
 
 # Bibliografy
 1. Chang, C. C. et al. Second-generation PLINK: rising to the challenge of larger and richer datasets. GigaScience 4, (2015).
+
 2.Weir, B. S. & Cockerham, C. C. Estimating F-Statistics for the Analysis of Population Structure. Evolution 38, 1358–1370 (1984).
