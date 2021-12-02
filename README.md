@@ -1,12 +1,13 @@
 # Fst for more than 100 populations
 
-The available softwares to calculate Fst do not allow more than 100 populations. We used Weir and Cockerham Fst(1) with the software PLINK(2) is calculated with Here there is a simple Rscript to overcome this problem:
+FST between populations is a common statistic in population genetics. PLINK(1) does not have a native function to calculate between population FST, and commonly used functions like smartpca in Eigensoft(https://github.com/chrchang/eigensoft/tree/master/POPGEN)doe snot run for dataset with more than 100 population. 
+This R script uses the Weir and Cockerham Fst(2), implemented in the software PLINK(1) to calculate pairwise distance between populations. It accepts the input data as plink file format and extracts population information from the .fam file.
 
 
 ## Set up
 
 I use conda for installing almost all programs (https://conda.io/projects/conda/en/latest/user-guide/install/index.html). 
-Make sure that your conda environment has plink(1) installed and is using R v.4. 
+Make sure that your conda environment has Plink(1) installed and is using R v.4. 
 Also make sure that you have the Pacman library installed in R!
 
 ## Ready to run!
@@ -31,6 +32,7 @@ Hope it works! Email me for any doubt (epifaniarango@gmail.com).
 
 
 # Bibliografy
-1. Chang, C. C. et al. Second-generation PLINK: rising to the challenge of larger and richer datasets. GigaScience 4, (2015).
+1. Weir, B. S. & Cockerham, C. C. Estimating F-Statistics for the Analysis of Population Structure. Evolution 38, 1358–1370 (1984).
+2. Chang, C. C. et al. Second-generation PLINK: rising to the challenge of larger and richer datasets. GigaScience 4, (2015).
 
-2.Weir, B. S. & Cockerham, C. C. Estimating F-Statistics for the Analysis of Population Structure. Evolution 38, 1358–1370 (1984).
+
