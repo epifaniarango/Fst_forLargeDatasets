@@ -17,7 +17,6 @@ bed = args[1]
 cores = as.numeric(args[2])
 
 fam=read.table(paste(bed,".fam",sep = ""))
-bed_file=read.table(paste(bed,".bed",sep = ""))
 
 
 
