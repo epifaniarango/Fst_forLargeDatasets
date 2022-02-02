@@ -11,13 +11,13 @@ args <- commandArgs(trailingOnly = TRUE)
 
 
 #arguments 1.file 
-bed_file = args[1]
+bed = args[1]
 
 #argument 2. cores
 cores = as.numeric(args[2])
 
 fam=read.table(paste(bed_file,".fam",sep = ""))
-bed_file=read.table(paste(bed_file,".bed",sep = ""))
+bed_file=read.table(paste(bed,".bed",sep = ""))
 
 
 
@@ -68,7 +68,7 @@ write.table(header, "fst.txt",quote = F,col.names = F,row.names = F)
 
 foreach (i=1:nrow(combinaciones)) %do% {
 
-  system(paste("plink --bfile GelatoHO_mergedSetMarchMaMi --allow-no-sex --keep-cluster-names ",combinaciones[i,1]," ",combinaciones[i,2]," --within clusters.txt --fst --out trash/fst.",combinaciones[i,1],"_",combinaciones[i,2],">log", sep = ""))
+  system(paste("plink --bfile ",bed," --allow-no-sex --keep-cluster-names ",combinaciones[i,1]," ",combinaciones[i,2]," --within clusters.txt --fst --out trash/fst.",combinaciones[i,1],"_",combinaciones[i,2],">log", sep = ""))
   system(paste("grep 'Weighted Fst estimate:' trash/fst.",combinaciones[i,1],"_",combinaciones[i,2],".log> trash/fst.",combinaciones[i,1],"_",combinaciones[i,2],sep = ""))
 
   fst = read.table(paste("trash/fst.",combinaciones[i,1],"_",combinaciones[i,2],sep = ""))
