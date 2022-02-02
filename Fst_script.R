@@ -16,7 +16,7 @@ bed = args[1]
 #argument 2. cores
 cores = as.numeric(args[2])
 
-fam=read.table(paste(bed_file,".fam",sep = ""))
+fam=read.table(paste(bed,".fam",sep = ""))
 bed_file=read.table(paste(bed,".bed",sep = ""))
 
 
