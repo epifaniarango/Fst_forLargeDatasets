@@ -74,7 +74,7 @@ foreach (i=1:nrow(combinaciones)) %do% {
   vec=c(combinaciones[i,1],combinaciones[i,2],fst$V4)
   write(paste(vec[1], vec[2], vec[3],"\n", sep ='\t'),file="fst.txt",append=TRUE)
   
-  system(paste("rm trash/fst.",combinaciones[i,1],"_",combinaciones[i,2],"*"))
+  system(paste("rm trash/fst.",combinaciones[i,1],"_",combinaciones[i,2],"*", sep=""))
 
   
 }
