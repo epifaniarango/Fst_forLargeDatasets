@@ -79,7 +79,8 @@ foreach (i=1:nrow(combinaciones)) %do% {
   
 }
 
+stopCluster(cl)
 system(paste("sed -i '/^$/d' fst.txt", sep=""))
 system(paste("rm -rf trash", sep = ""))
-stopCluster(cl)
+
 
