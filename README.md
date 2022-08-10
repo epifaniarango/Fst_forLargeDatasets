@@ -1,6 +1,6 @@
 # Fst for more than 100 populations
 
-FST between populations is a common statistic in population genetics. PLINK(1) does not have a native function to calculate between population FST, and commonly used functions like smartpca in Eigensoft(https://github.com/chrchang/eigensoft/tree/master/POPGEN)doe snot run for dataset with more than 100 population. 
+FST between populations is a common statistic in population genetics. PLINK(1) does not have a native function to calculate between population FST, and commonly used functions like smartpca in Eigensoft(https://github.com/chrchang/eigensoft/tree/master/POPGEN) does not run for dataset with more than 100 population. 
 This R script uses the Weir and Cockerham Fst(2), implemented in the software PLINK(1) to calculate pairwise distance between populations. It accepts the input data as plink file format and extracts population information from the .fam file.
 
 
